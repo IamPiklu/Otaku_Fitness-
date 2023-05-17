@@ -1,0 +1,260 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Anime Gym</title>
+    <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@100&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Baloo+Bhaijaan+2&display=swap" rel="stylesheet">
+    <style>
+        body {
+            margin: 0px;
+            padding: 0px;
+            background: url('img/one_punch_man_3.png');
+            color: aliceblue;
+            font-family: 'Baloo Bhaijaan 2', cursive;
+        }
+
+        .mid img {
+            width: 100px;
+            height: 100px;
+            border-radius: 50px;
+
+        }
+
+        .left img {
+            width: 100px;
+            height: 100px;
+            border-radius: 50px;
+            background-color: transparent;
+            filter: invert(120%);
+        }
+
+        .left div {
+            text-align: center;
+            cursor: pointer;
+            font-size: 20px;
+            line-height: 10px;
+        }
+
+        .left {
+            /* border: 1px solid green; */
+            display: inline-block;
+            position: absolute;
+            top: 24px;
+            left: 30px;
+        }
+
+        .mid {
+            border: 1px solid transparent;
+            display: block;
+            /* background-image: url('img/fightin2.png'); */
+            width: 1200px;
+            height: 75px;
+            margin: 43px auto;
+            box-sizing: border-box;
+            border-radius: 50px;
+        }
+
+        .nevbar {
+            font-family: 'Raleway', sans-serif;
+            font-weight: bold;
+        }
+
+        .navbar ul {
+            overflow: auto;
+        }
+
+        .nevbar li {
+            display: inline-block;
+            margin: 10px auto;
+            list-style: none;
+            font-size: 20px;
+
+        }
+
+        .nevbar li a {
+            text-decoration: none;
+            color: aliceblue;
+            padding: 30px 40px 0px 0px;
+        }
+
+        .nevbar li a:hover,.nevbar li a.active {
+            text-decoration: underline;
+            color: aqua;
+        }
+
+        .search {
+            float: right;
+            padding: 11px 5px;
+            margin: 0px 27px;
+        }
+
+        #search {
+            border-radius: 25px;
+            padding: 9px 32px;
+            margin: -36px -16px;
+
+        }
+
+        .nevbar div placeholder {
+            font-size: 40px;
+        }
+
+        .nevbar li div#search {
+            padding: 0px 0px 0px 0px;
+            margin: 0px 0px 0px 0px;
+
+        }
+
+        .right {
+            /* border: 1px solid rgba(0, 119, 255, 0.358); */
+            display: inline-block;
+            position: absolute;
+            top: 30px;
+            right: 30px;
+        }
+
+        .btn {
+            margin: 6px 10px;
+            padding: 2px 10px;
+            border: 2px solid cyan;
+            border-radius: 12px;
+            color: white;
+            background-color: transparent;
+            cursor: pointer;
+            font-family: 'Baloo Bhaijaan 2', cursive;
+            font-size: 15px;
+        }
+
+        .btn:hover {
+            background-color: black;
+        }
+
+        .container {
+            border: 2px solid white;
+            color: white;
+            margin: 72px 44px;
+            padding: 14px 44px;
+            font-size: 12px;
+            border-radius: 30px;
+            font-family: 'Baloo Bhaijaan 2', cursive;
+        }
+
+        .container h1,
+        .box h1 {
+            text-decoration: underline;
+        }
+
+        .box {
+            border: 2px solid white;
+            color: oldlace;
+            margin: 136px 981px 43px 115px;
+            padding: 22px 38px;
+            font-size: 24px;
+            text-align: center;
+            font-family: 'Baloo Bhaijaan 2', cursive;
+            border-radius: 24px;
+        }
+
+        .form_group input {
+            font-size: 26px;
+            padding: 7px 110px;
+            margin: 12px auto;
+            text-align: center;
+            border-radius: 25px;
+        }
+
+        .box button {
+            padding: 1px 56px;
+            font-size: 24px;
+            margin: 15px auto;
+            text-align: center;
+            border-radius: 20px;
+        }
+    </style>
+</head>
+
+<body>
+    <header class="header">
+        <!-- for logo -->
+        <div class="left">
+            <img src="img/logo.png" alt="Shit pc">
+            <div>Otaku Fitness</div>
+        </div>
+        <!-- for navgational bar -->
+        <div class="mid">
+            <ul class="nevbar">
+                <li><a href="#" class="active">Home</a></li>
+                <li><a href="#aboutus">About</a></li>
+                <li><a href="#">Fitness Calculators</a></li>
+                <li><a href="#">Contact Us</a></li>
+                <div class="search">
+                    <input type="search" id="search" placeholder="Search about us         🔍">
+                </div>
+            </ul>
+
+        </div>
+        <!-- for contact -->
+        <div class="right">
+            <button class="btn">Contect us.</button>
+        </div>
+        <div class="box">
+            <h1>Join us</h1>
+            <form action="no">
+                <div class="form_group">
+                    <input type="text" name="" placeholder="Enter your name">
+                </div>
+                <div class="form_group">
+                    <input type="text" name="" placeholder="Age">
+                </div>
+                <div class="form_group">
+                    <input type="text" name="" placeholder="locality">
+                </div>
+                <div class="form_group">
+                    <input type="email" name="" placeholder="Email address">
+                </div>
+                <button class="btn">Submit</button>
+            </form>
+        </div>
+        <div class="container">
+            <h1>Best Gym for anime fans</h1>
+            <h3>Description</h3>
+            <div id="aboutus"><p>Welcome to Otaku Fitness, the ultimate gym experience designed exclusively for anime fans! Step into
+                    a world where your love for anime and fitness unite, creating a unique space that caters to both
+                    your physical and otaku desires.</p>
+                <p>At Otaku Fitness, we understand that passion for anime runs deep within you, and we've curated an
+                    environment that celebrates your favorite anime series while helping you achieve your fitness goals.
+                    Our gym is adorned with vibrant murals showcasing iconic anime characters, creating a visually
+                    stimulating atmosphere that instantly transports you to the realms of your beloved anime worlds.</p>
+                <p >But Otaku Fitness is more than just a visually appealing gym. We offer a wide range of
+                    our"Shounen Showdown" class, combining high-intensity interval training and martial arts inspired by
+                    your favorite action-packed anime battles. Or try our "Magical Transformation" yoga session, where
+                    youcanchannel the elegance and grace of magical girls to find balance and flexibility.</p>
+                <p> Our state-of-the-art equipment is designed with anime aesthetics in mind. Imagine powering through
+                    your workout on treadmills featuring speed settings inspired by anime character rankings, or
+                    weightlifting with dumbbells designed as replica swords from popular anime series. Our fitness
+                    instructors are passionate otaku themselves, ensuring they understand your love for anime and can
+                    provide guidance andmotivation while incorporating your favorite characters and themes into their
+                    workouts.</p>
+                <p>For those seeking a break from intense workouts, our lounge area is a haven for anime fans. Grab a
+                    seat on our plush couches and enjoy a selection of anime films and series playing on large
+                    screens.Engage in spirited discussions with fellow fans, exchange recommendations, or challenge each
+                    other in anime trivia competitions. We also host regular cosplay events, encouraging you to dress up
+                    as your favorite characters and engage in friendly cosplay battles.</p>
+                <p>At Otaku Fitness, we foster a community of like-minded individuals who share a passion for anime and
+                    fitness. Join us to meet fellow fans, form lasting friendships, and bond over your favorite anime
+                    moments. Our gym memberships come with exclusive perks such as access to anime
+                    conventions,discounted merchandise, and invitations to special events featuring industry guests.</p>
+                <p>So whether you're aiming to strengthen your body or embark on a heroic fitness journey, Otaku Fitness
+                    is the place where anime dreams come true. Unleash your inner otaku, break a sweat, and make gains
+                    while immersing yourself in the vibrant world of anime. It's time to go beyond your limits, just
+                    like your favorite anime heroes!</p>
+            </div>
+        </div>
+    </header>
+</body>
+
+</html>
