@@ -12,7 +12,7 @@
         body {
             margin: 0px;
             padding: 0px;
-            background: url('one_punch_man_3.png');
+            background: url('img/one_punch_man_3.png');
             color: aliceblue;
             font-family: 'Baloo Bhaijaan 2', cursive;
         }
@@ -81,7 +81,8 @@
             padding: 30px 40px 0px 0px;
         }
 
-        .nevbar li a:hover,.nevbar li a.active {
+        .nevbar li a:hover,
+        .nevbar li a.active {
             text-decoration: underline;
             color: aqua;
         }
@@ -96,6 +97,17 @@
             border-radius: 25px;
             padding: 9px 32px;
             margin: -36px -16px;
+
+        }
+
+        #home,
+        #about,
+        #fc,
+        #c_us {
+            border: 2px solid cyan;
+            border-radius: 43px;
+            padding: 10px 24px 12px 20px;
+            margin: 6px 17px 6px 8px;
 
         }
 
@@ -174,6 +186,9 @@
             text-align: center;
             border-radius: 20px;
         }
+        #aboutus{
+            font-size: 24px;
+        }
     </style>
 </head>
 
@@ -181,16 +196,16 @@
     <header class="header">
         <!-- for logo -->
         <div class="left">
-            <img src="logo.png" alt="Shit pc">
+            <img src="img/logo.png" alt="Shit pc">
             <div>Otaku Fitness</div>
         </div>
         <!-- for navgational bar -->
         <div class="mid">
             <ul class="nevbar">
-                <li><a href="#" class="active">Home</a></li>
-                <li><a href="#aboutus">About</a></li>
-                <li><a href="#">Fitness Calculators</a></li>
-                <li><a href="#">Contact Us</a></li>
+                <li><a href="#" class="active" id="home">Home</a></li>
+                <li><a href="#aboutus" id="about">About</a></li>
+                <li><a href="#" id="fc">Fitness Calculators</a></li>
+                <li><a href="#" id="c_us">Contact Us</a></li>
                 <div class="search">
                     <input type="search" id="search" placeholder="Search about us         🔍">
                 </div>
@@ -198,9 +213,9 @@
 
         </div>
         <!-- for contact -->
-        <div class="right">
+        <!-- <div class="right">
             <button class="btn">Contect us.</button>
-        </div>
+        </div> -->
         <div class="box">
             <h1>Join us</h1>
             <form action="no">
@@ -222,14 +237,15 @@
         <div class="container">
             <h1>Best Gym for anime fans</h1>
             <h3>Description</h3>
-            <div id="aboutus"><p>Welcome to Otaku Fitness, the ultimate gym experience designed exclusively for anime fans! Step into
+            <div id="aboutus">
+                <p>Welcome to Otaku Fitness, the ultimate gym experience designed exclusively for anime fans! Step into
                     a world where your love for anime and fitness unite, creating a unique space that caters to both
                     your physical and otaku desires.</p>
                 <p>At Otaku Fitness, we understand that passion for anime runs deep within you, and we've curated an
                     environment that celebrates your favorite anime series while helping you achieve your fitness goals.
                     Our gym is adorned with vibrant murals showcasing iconic anime characters, creating a visually
                     stimulating atmosphere that instantly transports you to the realms of your beloved anime worlds.</p>
-                <p >But Otaku Fitness is more than just a visually appealing gym. We offer a wide range of
+                <p>But Otaku Fitness is more than just a visually appealing gym. We offer a wide range of
                     our"Shounen Showdown" class, combining high-intensity interval training and martial arts inspired by
                     your favorite action-packed anime battles. Or try our "Magical Transformation" yoga session, where
                     youcanchannel the elegance and grace of magical girls to find balance and flexibility.</p>
